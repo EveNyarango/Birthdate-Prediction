@@ -14,12 +14,12 @@ function myFunction (event);{
       }
       if (gender==="male") {
           alert(
-              "As a male born on" + weekDays[date.getDay() = "," + "Your Akan name is" + maleNames[date.getDay()] 
+              "As a male born on" + dayOfTheWeek[date.getDay() = "," + "Your Akan name is" + maleNames[date.getDay()] 
           );
           document.getElementById ("result").innerHTML = maleNames[date.getDay()];
       } else if (gender==="female") {
         alert(
-            "As a female born on" + weekDays[date.getDay() = "," + "Your Akan name is" + femaleNames[date.getDay()] 
+            "As a female born on" + dayOfTheWeek[date.getDay() = "," + "Your Akan name is" + femaleNames[date.getDay()] 
         );
         document.getElementById ("result").innerHTML = femaleNames[date.getDay()];
       }else {
