@@ -1,36 +1,14 @@
 var maleNames= ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var femaleNames= ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 var dayOfTheWeek= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-function myFunction (event);{
-    event.preventDefault ();
-    const form = new FormData(event.target);
-    var gender= form.get("gender");
-    var dateFinput= form.get("date");
-    date= new Date (dateFinput);
-    const dateFormat = /([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/;
-    if (!dateFormat.test(dateFinput)) {
-        alert(" Please,fill in all the requirements to proceed on.");
-        return false;
-      }
-      if (gender==="male") {
-          alert(
-              "As a male born on" + dayOfTheWeek[date.getDay() = "," + "Your Akan name is" + maleNames[date.getDay()] 
-          );
-          document.getElementById ("result").innerHTML = maleNames[date.getDay()];
-      } else if (gender==="female") {
-        alert(
-            "As a female born on" + dayOfTheWeek[date.getDay() = "," + "Your Akan name is" + femaleNames[date.getDay()] 
-        );
-        document.getElementById ("result").innerHTML = femaleNames[date.getDay()];
-      }else {
-        alert(
-          " For a female born " +
-            " Undefined Date " +
-            "," +
-            " Your Akan Name Is " +
-            " Undefined"
-        );
-      }
-      
 
+function myFunction(){
+  var date = document.getElementById("date").value;
+  var month = document.getElementById("month").value;
+  var year = document.getElementById("year").value;
+  var gender = document.getElementById("")
+
+var CC = parseInt(year.substr(0,2));
+var YY = parseInt(year.substr(2,3));
+var d = parseInt((CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7);
 }

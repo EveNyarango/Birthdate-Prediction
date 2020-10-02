@@ -2,7 +2,9 @@
     background-color:teal;
     /* background-color: cadetblue; */
 }
-
+h2{
+    text-align: center;
+}
 .thead{
 background-color:teal;
 }
