@@ -1,15 +1,16 @@
 .jumbotron {
-    /* color: brown; */
-    background-color: #4B878BFF;
+    background-color:teal;
     /* background-color: cadetblue; */
 }
 
-#intro img {
-    width: 500px;
-    height: 300px;
+.thead{
+background-color:teal;
 }
 
-/* #intro p {
-    float: left;
-} */
-#second img
+.kerry{
+    background-color:teal;
+}
+form{
+    margin-left:200px;
+    margin-right: 200px;
+}
