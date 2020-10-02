@@ -117,24 +117,15 @@
           <input type="number" class="form-control" id="year" placeholder="YY">
         </div>
       </div>
-      <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-          <div class="col-sm-10" id="">
-            <div id="gender">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="male" value="option1" checked>
-              <label class="form-check-label" for="gridRadios1">
-                Male
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="female" value="option2">
-              <label class="form-check-label" for="gridRadios2">
-                Female
-              </label>
-            </div>
-          </div>
+      <div class="form-group">
+        <label for="">Gender</label>
+        <select class="col-sm-10" id="gender">
+          <option value=""></option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+
+        </select>
+      </div>
       <div class="form-group row">
         <div class="col-sm-10">
           <button type="submit" class="btn btn-danger" onclick="myFunction()">Submit</button>
