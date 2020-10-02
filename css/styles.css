@@ -16,6 +16,10 @@ form{
     margin-left:200px;
     margin-right: 200px;
 }
+.copy{
+    text-align: center;
+    font-size: 20px;
+}
 
 /* .row p{
     text-align: center;
