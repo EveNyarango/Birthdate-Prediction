@@ -13,6 +13,7 @@ function myFunction(){
 
 var CC = parseInt(year.substr(0,2));
 var YY = parseInt(year.substr(2,3));
+// prompt(80)
 var MM = month;
 var DD = date;
 var d = parseInt((CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7);
