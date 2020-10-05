@@ -46,40 +46,41 @@
     <div class="kerry">
       <h2>Check-out your Akan name;</h2>
 
-      <form>
+      <form class="form" name="myForm" onsubmit="validate();">
         <div class="form-group row">
           <label for="date" class="col-sm-2 col-form-label">Date</label>
           <div class="col-sm-10">
-            <input type="number" class="form-control" id="date" placeholder="DD" >
+            <input type="number" class="form-control" id="date" placeholder="Date" name="date">
           </div>
         </div>
         <div class="form-group row">
           <label for="month" class="col-sm-2 col-form-label">Month</label>
           <div class="col-sm-10">
-            <input type="number" class="form-control" id="month" placeholder="MM">
+            <input type="number" class="form-control" id="month" placeholder="Month" name="month">
           </div>
         </div>
         <div class="form-group row">
           <label for="year" class="col-sm-2 col-form-label">Year</label>
           <div class="col-sm-10">
-            <input type="number" class="form-control" id="year" placeholder="YY">
+            <input type="number" class="form-control" id="year" placeholder="Year" name="year">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="month">Gender</label><br>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female
+            </label>
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-sm-2 col-form-label">Gender</label>
           <div class="col-sm-10">
-            <select class="form-control" id="gender">
-              <option value=""></option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-
-            </select>
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-10">
-            <button type="submit" class="btn btn-danger" onclick="myFunction()">Submit</button>
-            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="submit" class="btn btn-danger" onclick="findName();">find Akan</button>
           </div>
         </div>
       </form>
